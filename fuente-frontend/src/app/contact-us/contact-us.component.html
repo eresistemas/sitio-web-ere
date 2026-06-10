@@ -1,0 +1,142 @@
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- NAVBAR HEADER -->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" (click)="openMenu()">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <!-- lOGO -->
+            <a [routerLink]="['/']" class="navbar-brand">ERE sistemas</a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a [routerLink]="['/']" class="smoothScroll">Principal</a></li>
+                <li><a [routerLink]="['/about']" class="smoothScroll">Nosotros</a></li>
+                <li><a [routerLink]="['/shop']" class="smoothScroll">Productos y Servicios</a></li>
+                <li class="active"><a [routerLink]="['/contact-us']" class="smoothScroll">Contacto</a></li>
+                <li><a [routerLink]="['/help']" class="smoothScroll">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="video-step">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-12 col-sm-12 col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Contacto</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cms-main">
+    <div class="container">
+        <div class="row">
+            <div class="contact-us">
+                <h2>Comuníquese con nosotros:</h2>
+                <div class="row">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="email-box">
+                            <img src="assets/images/email.png" alt="Email" class="img-fluid" />
+                            <h3>
+                                <b>Email</b>
+                                <a href="mailTo:ere.sistemas.informaticos@gmail.com">
+                                    ere.sistemas.informaticos@gmail.com</a
+                                >
+                            </h3>
+                        </div>
+                        <div class="email-box">
+                            <img src="assets/images/call.png" alt="Email" class="img-fluid" />
+                            <h3>
+                                <b>Tel.</b> <a href="call?2284 224954" target="_blank"> 2284 224954</a>
+                                <br />
+                            </h3>
+                        </div>
+                        <div class="email-box">
+                            <img src="assets/images/location.png" alt="Email" class="img-fluid">
+                            <!-- <h3><b class="d-block">Post:</b> Keas 69 Str. <br> 15234, Athens, Greece</h3> -->
+                            <h3>
+                                <b>Sedes</b><br>
+                                Tigre, Buenos Aires<br>
+                                Olavarría, Buenos Aires
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-6 col-md-6">
+                        <div fxLayout="column">
+                            <form
+                                class="inq-form"
+                                fxLayout="column"
+                                fxLayoutAlign="start"
+                                fxFlex="1 0 auto"
+                                name="form"
+                                [formGroup]="form"
+                                (ngSubmit)="onSubmit()"
+                            >
+                                <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100 0 auto">
+                                    <mat-form-field class="col-md-12 col-xs-12">
+                                        <input matInput placeholder="Nombre" formControlName="nombre" required />
+                                        <mat-error *ngIf="formErrors.nombre.required"> Nombre es requerido! </mat-error>
+                                    </mat-form-field>
+                                </div>
+                                <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100 0 auto">
+                                    <mat-form-field class="col-md-12 col-xs-12">
+                                        <input matInput placeholder="Email" formControlName="email" required />
+                                        <mat-error *ngIf="formErrors.email.required"> Email es requerido! </mat-error>
+                                        <mat-error *ngIf="formErrors.email.email">
+                                            Email must be a valid email address
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+                                <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100 0 auto">
+                                    <mat-form-field class="col-md-12 col-xs-12">
+                                        <input matInput placeholder="Tema" formControlName="tema" required />
+                                        <mat-error *ngIf="formErrors.tema.required"> Tema es requerido! </mat-error>
+                                    </mat-form-field>
+                                </div>
+                                <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100 0 auto">
+                                    <mat-form-field class="col-md-12 col-xs-12">
+                                        <textarea matInput placeholder="Mensaje" formControlName="mensaje" required>
+                                        </textarea>
+                                        <mat-error *ngIf="formErrors.mensaje.required">
+                                            Mensaje es requerido!
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+
+                                <mat-error class="mb-24" style="text-align: center" *ngIf="errorEnvio && terminoSubmit">
+                                    <strong>Error al enviar el mensaje. Por favor vuelva a intentar.</strong>
+                                </mat-error>
+
+                                <mat-error
+                                    class="mb-24"
+                                    style="text-align: center; color: green !important"
+                                    *ngIf="!errorEnvio && terminoSubmit"
+                                >
+                                    <strong>Su mensaje fué enviado correctamente.</strong>
+                                </mat-error>
+
+                                <div class="button-row text-center" fxFlex="100">
+                                    <button
+                                        class="add-back-btn text-right btn-submit"
+                                        mat-raised-button
+                                        color="black"
+                                        [disabled]="form.invalid"
+                                    >
+                                        Enviar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,82 @@
+
+
+
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- NAVBAR HEADER -->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" (click)="openMenu()">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <!-- lOGO -->
+            <a [routerLink]="['/']" class="navbar-brand">ERE sistemas</a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a [routerLink]="['/']" class="smoothScroll">Principal</a></li>
+                <li class="active"><a [routerLink]="['/about']" class="smoothScroll">Nosotros</a></li>
+                <li><a [routerLink]="['/shop']" class="smoothScroll">Productos y Servicios</a></li>
+                <li><a [routerLink]="['/contact-us']" class="smoothScroll">Contacto</a></li>
+                <li><a [routerLink]="['/help']" class="smoothScroll">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+<section class="video-step">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-12 col-sm-12 col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Nosotros</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cms-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>ERE sistemas es una empresa de software conformada por tres ingenieros de sistemas.
+                    Brindamos soluciones tecnológicas a medida para nuestros clientes.
+                    Pueden contar con ERE sistemas para cualquier tipo desarrollo de software. Nos caracterizamos por ser responsables, estar disponibles en todo momento para nuestros clientes y brindarles respuestas a todas sus preguntas.
+                </h3>
+            </div>
+        </div>
+        <div class="row team-info">
+            <div class="col-md-4">
+                <img src="assets/images/team/emic.jpg" alt="John" style="width:60%">
+                <h3><b>Emiliano Corvi</b></h3>
+                <p class="w3-opacity">Ingeniero de sistemas</p>
+                <!--
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                -->
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/team/emir.png" alt="Jane" style="width:60%">
+                <h3><b>Emiliano Recofsky</b></h3>
+                <p class="w3-opacity">Ingeniero de sistemas</p>
+                <!--
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                -->
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/team/rami.jpg" alt="Mike" style="width:60%">
+                <h3><b>Ramiro Weimann</b></h3>
+                <p class="w3-opacity">Ingeniero de sistemas</p>
+                <!--
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
